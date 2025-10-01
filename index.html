@@ -3,32 +3,34 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Girls Leaders Forum (GLF)</title>
+    <!-- SEO Optimization -->
+    <title>Girls Leaders Forum (GLF) | Empowering Youth in Rwanda & SRH Education</title>
+    <meta name="description" content="The Girls Leaders Forum (GLF) at the University of Rwanda leads youth empowerment, gender equality, and adolescent Sexual and Reproductive Health (SRH) education initiatives across Rwanda.">
+    <!-- End SEO Optimization -->
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <style>
-        /* Ensures smooth scrolling when clicking internal links */
-        html {
-            scroll-behavior: smooth;
+        /* Mobile Navigation visibility control */
+        .mobile-nav {
+            display: none;
         }
-        /* ESSENTIAL MOBILE MENU CSS */
-        .mobile-nav { display: none; }
-        .mobile-nav.active { display: flex !important; flex-direction: column; width: 100%; }
-        
-        /* Optional: Custom style for the Hero background pattern/image if you add one */
-        .hero-bg {
-            background-image: url('images/hero_background.jpg'); /* Replace with your actual hero image */
-            background-size: cover;
-            background-position: center;
+        .mobile-nav.active {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
         }
+        section { scroll-margin-top: 5rem; }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-50">
 
+    <!-- NAVIGATION BAR -->
     <nav class="bg-green-600 text-white px-6 py-4 flex justify-between items-center sticky top-0 z-50 shadow-lg">
         <div class="flex items-center space-x-3">
-            <a href="index.html" class="flex items-center space-x-3 hover:bg-green-700/50 px-3 py-1 rounded-full transition duration-150">
+            <a href="index.html" class="flex items-center space-x-3 bg-green-700/50 px-3 py-1 rounded-full transition duration-150">
                 <img src="images/GLF_LOGO.png" alt="GLF Logo" class="h-8 w-auto rounded-full">
                 <h1 class="font-extrabold text-xl">Girls Leaders Forum</h1>
             </a>
@@ -47,6 +49,7 @@
         </button>
     </nav>
 
+    <!-- MOBILE NAVIGATION MENU -->
     <ul id="mobile-menu" class="mobile-nav absolute top-[68px] left-0 w-full bg-green-700 md:hidden flex-col items-center py-4 space-y-3 z-40 shadow-xl">
         <li><a href="about.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">About Us</a></li>
         <li><a href="initiatives.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">Initiatives</a></li>
@@ -55,60 +58,70 @@
         <li><a href="contact.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">Contact Us</a></li>
     </ul>
 
-    <header class="hero-bg bg-green-800 text-white relative">
-        <div class="absolute inset-0 bg-black/50"></div> <div class="relative max-w-7xl mx-auto px-6 py-24 text-center">
-            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight shadow-text">
-                Mentoring Rwanda's Future Leaders
-            </h1>
-            <p class="mt-4 text-xl md:text-2xl max-w-3xl mx-auto font-light">
-                The Girls Leaders Forum (GLF) empowers university students to guide youth in digital literacy, entrepreneurship, and health.
-            </p>
-            <div class="mt-10 space-y-4 sm:space-y-0 sm:space-x-6">
-                <a href="initiatives.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
-                    See Our Initiatives
+    <!-- HERO SECTION -->
+    <header class="relative bg-white pt-24 pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="z-10">
+                <h1 class="text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                    Empowering Rwanda's Future Leaders
+                </h1>
+                <p class="text-xl text-gray-700 mb-8">
+                    The Girls Leaders Forum (GLF), based at the University of Rwanda, champions gender equality, youth development, and vital adolescent sexual and reproductive health (SRH) education.
+                </p>
+                <a href="initiatives.html" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-white bg-green-600 hover:bg-green-700 transition duration-150 transform hover:scale-105">
+                    Explore Our Initiatives
                 </a>
-                <a href="about.html" class="inline-block border-2 border-white hover:bg-white hover:text-green-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300">
-                    Learn About Us
-                </a>
+            </div>
+            <div class="relative hidden md:block z-10">
+                <img class="w-full h-auto rounded-xl shadow-2xl transform rotate-3" 
+                     src="https://placehold.co/600x400/10B981/ffffff?text=GLF+Youth+Leaders" 
+                     alt="A group of young Rwandan women smiling and collaborating"
+                     onerror="this.onerror=null;this.src='https://placehold.co/600x400/10B981/ffffff?text=GLF+Youth+Leaders';">
             </div>
         </div>
     </header>
 
-    <section id="metrics" class="bg-white py-12 shadow-inner">
+    <!-- MISSION/IMPACT SECTION -->
+    <section id="impact" class="py-20 bg-green-50">
         <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-extrabold text-green-700 mb-8">GLF By The Numbers</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-6 bg-green-50 rounded-xl shadow-md border-b-4 border-green-500">
-                    <i class="fas fa-users text-4xl text-green-600 mb-3"></i>
-                    <p class="text-5xl font-extrabold text-gray-800">500+</p>
-                    <p class="text-lg text-gray-600 mt-1">Students Mentored</p>
+            <h2 class="text-4xl font-extrabold text-green-800 mb-12">Our Core Pillars of Impact</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Pillar 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-green-600 transition duration-300 hover:scale-[1.02]">
+                    <i class="fas fa-venus-mars text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Gender Equality</h3>
+                    <p class="text-gray-600">Working to dismantle barriers and promote equal opportunities for all young people in education and leadership.</p>
                 </div>
-                <div class="p-6 bg-green-50 rounded-xl shadow-md border-b-4 border-green-500">
-                    <i class="fas fa-hand-holding-heart text-4xl text-green-600 mb-3"></i>
-                    <p class="text-5xl font-extrabold text-gray-800">12</p>
-                    <p class="text-lg text-gray-600 mt-1">Active Community Workshops</p>
+                <!-- Pillar 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-green-600 transition duration-300 hover:scale-[1.02]">
+                    <i class="fas fa-heartbeat text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Health & SRH</h3>
+                    <p class="text-gray-600">Delivering comprehensive SRH information to reduce teenage pregnancies and combat misinformation through dialogue.</p>
                 </div>
-                <div class="p-6 bg-green-50 rounded-xl shadow-md border-b-4 border-green-500">
-                    <i class="fas fa-graduation-cap text-4xl text-green-600 mb-3"></i>
-                    <p class="text-5xl font-extrabold text-gray-800">20+</p>
-                    <p class="text-lg text-gray-600 mt-1">University Volunteers</p>
+                <!-- Pillar 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-green-600 transition duration-300 hover:scale-[1.02]">
+                    <i class="fas fa-users text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Youth Leadership</h3>
+                    <p class="text-gray-600">Cultivating the next generation of ethical and effective leaders through mentorship, training, and community engagement projects.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="cta-partner" class="bg-gray-800 text-white py-16">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-extrabold mb-4">Support the Next Generation of Rwandan Leaders</h2>
-            <p class="text-xl font-light mb-8">
-                Your partnership fuels our efforts in digital literacy, health, and entrepreneurship training for vulnerable youth.
+    <!-- LATEST NEWS CTA -->
+    <section id="latest-news" class="py-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Latest Campaign: Parental Voices</h2>
+            <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                Our new initiative empowers parents to openly discuss SRH, combating stigma and misinformation at the family level.
             </p>
-            <a href="contact.html#sponsorship" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-10 rounded-lg shadow-xl text-lg transform hover:scale-105 transition duration-300">
-                <i class="fas fa-donate mr-2"></i> Partner With Us Today
+            <a href="news.html" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-green-600 bg-white shadow-xl ring-2 ring-green-600 hover:bg-green-50 transition duration-150">
+                Read the Full Story in News <i class="fas fa-arrow-right ml-2"></i>
             </a>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="bg-gray-900 text-gray-300 text-center py-6">
         <p>
             <img src="images/GLF_LOGO.png" alt="GLF Logo" class="h-6 w-auto mx-auto mb-2 opacity-75">
@@ -116,17 +129,16 @@
         </p>
     </footer>
 
+    <!-- JAVASCRIPT FOR MOBILE MENU -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const menuToggle = document.getElementById('menu-toggle');
             const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelectorAll('.nav-link');
 
-            // 1. Mobile Menu Toggle Functionality
             if (menuToggle && mobileMenu) {
                 menuToggle.addEventListener('click', () => {
                     mobileMenu.classList.toggle('active');
-                    
-                    // Logic to toggle the menu icon (bars <-> close)
                     const icon = menuToggle.querySelector('i');
                     if (mobileMenu.classList.contains('active')) {
                         icon.classList.remove('fa-bars');
@@ -137,18 +149,14 @@
                     }
                 });
             }
-            
-            // 2. Close mobile menu when a link is clicked
-            document.querySelectorAll('#mobile-menu a').forEach(link => {
+
+            navLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     if (mobileMenu.classList.contains('active')) {
                         mobileMenu.classList.remove('active');
-                        // Reset the icon to bars when closing
                         const icon = menuToggle.querySelector('i');
-                        if (icon) {
-                            icon.classList.remove('fa-times');
-                            icon.classList.add('fa-bars');
-                        }
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
                     }
                 });
             });
