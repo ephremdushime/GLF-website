@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News & Updates | Girls Leaders Forum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Mobile Navigation visibility control */
+        .mobile-nav {
+            display: none;
+        }
+        /* Essential: Shows the mobile menu as a full-width column when active */
+        .mobile-nav.active {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        /* Sticky header fix for anchor links (prevents content from hiding behind the nav bar) */
+        section {
+            scroll-margin-top: 5rem; 
+        }
+
+        /* Ensure smooth scrolling when clicking internal links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+   <nav class="bg-green-600 text-white px-6 py-4 flex justify-between items-center sticky top-0 z-50 shadow-lg">
+    <div class="flex items-center space-x-3">
+        <a href="index.html" class="flex items-center space-x-3 hover:bg-green-700/50 px-3 py-1 rounded-full transition duration-150">
+            <img src="images/GLF_LOGO.png" alt="GLF Logo" class="h-8 w-auto rounded-full">
+            <h1 class="font-extrabold text-xl">Girls Leaders Forum</h1>
+        </a>
+    </div>
+    
+    <ul class="hidden md:flex space-x-2 font-semibold">
+                <li><a href="about.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">About Us</a></li>
+        <li><a href="initiatives.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">Initiatives</a></li>
+        <li><a href="gallery.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">Gallery</a></li>
+                <li><a href="news.html" class="bg-green-700 text-white px-3 py-1 rounded-full shadow-inner transition duration-150">News</a></li>
+        <li><a href="contact.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">Contact Us</a></li> 
+    </ul>
+
+    <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+</nav>
+
+    <ul id="mobile-menu" class="mobile-nav absolute top-[68px] left-0 w-full bg-green-700 md:hidden flex-col items-center py-4 space-y-3 z-40 shadow-xl">
+        <li><a href="about.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">About Us</a></li>
+        <li><a href="initiatives.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">Initiatives</a></li>
+        <li><a href="gallery.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">Gallery</a></li>
+                <li><a href="news.html" class="nav-link bg-green-600 font-bold text-white w-full py-2 block text-center transition duration-150">News</a></li>
+        <li><a href="contact.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">Contact Us</a></li>
+    </ul>
+
+    <header class="bg-gradient-to-r from-green-700 to-green-500 text-white text-center py-16">
+                <h2 class="text-4xl md:text-5xl font-extrabold">News & Updates</h2>
+        <p class="mt-3 text-lg max-w-2xl mx-auto px-4">
+            Stay informed about our impact, upcoming events, and stories of the young women leading change across Rwanda.
+        </p>
+    </header>
+
+    <section id="news-grid" class="max-w-7xl mx-auto px-6 py-16">
+        <h3 class="text-3xl font-bold text-gray-800 text-center mb-12">Featured Stories</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl hover:scale-[1.02]">
+                                <a href="news-parental-voices.html"><img src="https://via.placeholder.com/800x500?text=Parental+Voices+Launch+Photo" alt="Group of parents at a forum" class="w-full h-48 object-cover"></a>
+                <div class="p-6">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-red-600 bg-red-100 px-3 py-1 rounded-full mb-2 inline-block">Campaign</span>
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">GLF Launches 'Parental Voices for a Safe Future'</h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Our new initiative empowers parents to openly discuss sexual health, aiming to drastically reduce early pregnancies and harassment in schools.
+                    </p>
+                    <p class="text-xs text-gray-400 mb-4">
+                        <i class="fas fa-calendar-alt mr-1"></i> October 1, 2025
+                    </p>
+                                        <a href="news-parental-voices.html" class="inline-flex items-center text-green-600 font-semibold hover:text-green-800 text-sm transition duration-150">
+                        Read Full Story <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl hover:scale-[1.02]">
+                <a href="#"><img src="https://via.placeholder.com/800x500?text=Leadership+Workshop+Image" alt="Girls participating in a workshop" class="w-full h-48 object-cover"></a>
+                <div class="p-6">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-blue-600 bg-blue-100 px-3 py-1 rounded-full mb-2 inline-block">Events</span>
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Empowering 50 New Leaders in Huye District</h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        A successful two-day leadership and career mentorship workshop was held, equipping high school girls with critical decision-making skills.
+                    </p>
+                    <p class="text-xs text-gray-400 mb-4">
+                        <i class="fas fa-calendar-alt mr-1"></i> September 15, 2025
+                    </p>
+                    <a href="#" class="inline-flex items-center text-green-600 font-semibold hover:text-green-800 text-sm transition duration-150">
+                        View Photo Gallery <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl hover:scale-[1.02]">
+                <a href="#"><img src="https://via.placeholder.com/800x500?text=Volunteer+Interview+Photo" alt="Volunteer working with a student" class="w-full h-48 object-cover"></a>
+                <div class="p-6">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-purple-600 bg-purple-100 px-3 py-1 rounded-full mb-2 inline-block">Spotlight</span>
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Meet Vestine: Mentoring the Next Generation</h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        A profile on one of our most dedicated student volunteers, Vestine, who shares her passion for civic engagement and gender equality.
+                    </p>
+                    <p class="text-xs text-gray-400 mb-4">
+                        <i class="fas fa-calendar-alt mr-1"></i> August 28, 2025
+                    </p>
+                    <a href="#" class="inline-flex items-center text-green-600 font-semibold hover:text-green-800 text-sm transition duration-150">
+                        Read Interview <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl hover:scale-[1.02]">
+                <a href="#"><img src="https://via.placeholder.com/800x500?text=Partnership+Signing" alt="Handshake over a table" class="w-full h-48 object-cover"></a>
+                <div class="p-6">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-yellow-600 bg-yellow-100 px-3 py-1 rounded-full mb-2 inline-block">Partnership</span>
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">GLF Secures New Tech Literacy Partner</h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        A major local tech firm has joined forces with GLF to sponsor upcoming Digital Literacy Workshops for 100 young women in rural areas.
+                    </p>
+                    <p class="text-xs text-gray-400 mb-4">
+                        <i class="fas fa-calendar-alt mr-1"></i> August 10, 2025
+                    </p>
+                    <a href="#" class="inline-flex items-center text-green-600 font-semibold hover:text-green-800 text-sm transition duration-150">
+                        Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div> <div class="text-center mt-16">
+            <h4 class="text-2xl font-bold text-gray-800 mb-4">Want More Updates?</h4>
+            <p class="text-lg text-gray-600 mb-6">Follow us on social media for daily impact stories and announcements.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-blue-600 hover:text-blue-800 text-3xl transition duration-150" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                <a href="#" class="text-blue-400 hover:text-blue-600 text-3xl transition duration-150" aria-label="Twitter"><i class="fab fa-twitter-square"></i></a>
+                <a href="#" class="text-pink-600 hover:text-pink-800 text-3xl transition duration-150" aria-label="Instagram"><i class="fab fa-instagram-square"></i></a>
+                <a href="#" class="text-red-600 hover:text-red-800 text-3xl transition duration-150" aria-label="YouTube"><i class="fab fa-youtube-square"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 text-center py-6">
+    <p>
+        <img src="images/GLF_LOGO.png" alt="GLF Logo" class="h-6 w-auto mx-auto mb-2 opacity-75">
+        &copy; 2025 Girls Leadership Forum (GLF) – University of Rwanda. All rights reserved.
+    </p>
+</footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            // 1. Mobile Menu Toggle Functionality
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', () => {
+                    // Toggle the 'active' class on the mobile menu
+                    mobileMenu.classList.toggle('active');
+
+                    // Toggle the icon (bars <-> close)
+                    const icon = menuToggle.querySelector('i');
+                    if (mobileMenu.classList.contains('active')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            }
+
+            // 2. Close mobile menu when a link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mobileMenu.classList.contains('active')) {
+                        mobileMenu.classList.remove('active');
+                        // Reset the icon to bars when closing
+                        const icon = menuToggle.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

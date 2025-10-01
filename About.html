@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Girls Leaders Forum (GLF)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Ensures smooth scrolling when clicking internal links */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* ------------------------------------------- */
+        /* ESSENTIAL MOBILE MENU CSS */
+        /* By default, hide the mobile menu */
+        .mobile-nav { display: none; }
+        /* When the menu is active (via JS), display it as a flex column */
+        .mobile-nav.active { display: flex; flex-direction: column; width: 100%; }
+        /* ------------------------------------------- */
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-green-600 text-white px-6 py-4 flex justify-between items-center sticky top-0 z-50 shadow-lg">
+        <div class="flex items-center space-x-3">
+            <a href="index.html" class="flex items-center space-x-3 hover:bg-green-700/50 px-3 py-1 rounded-full transition duration-150">
+                <img src="images/GLF_LOGO.png" alt="GLF Logo" class="h-8 w-auto rounded-full">
+                <h1 class="font-extrabold text-xl">Girls Leaders Forum</h1>
+            </a>
+        </div>
+        
+        <ul class="hidden md:flex space-x-2 font-semibold">
+            <li>
+                <a href="about.html" class="bg-green-700 text-white px-3 py-1 rounded-full shadow-inner transition duration-150">About Us</a>
+            </li>
+            <li><a href="initiatives.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">Initiatives</a></li>
+            <li><a href="gallery.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">Gallery</a></li>
+            <li><a href="news.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">News</a></li>
+            <li><a href="contact.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">Contact Us</a></li> 
+        </ul>
+
+        <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <ul id="mobile-menu" class="mobile-nav absolute top-[68px] left-0 w-full bg-green-700 md:hidden flex-col items-center py-4 space-y-3 z-40 shadow-xl">
+        <li>
+            <a href="about.html" class="nav-link bg-green-600 font-bold text-white w-full py-2 block text-center transition duration-150">About Us</a>
+        </li>
+        <li><a href="initiatives.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">Initiatives</a></li>
+        <li><a href="gallery.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">Gallery</a></li>
+        <li><a href="news.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">News</a></li>
+        <li><a href="contact.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">Contact Us</a></li>
+    </ul>
+
+    <header class="bg-gradient-to-r from-green-700 to-green-500 text-white text-center py-16">
+        <h2 class="text-4xl md:text-5xl font-extrabold">Who We Are: The Girls Leaders Forum</h2>
+        <p class="mt-3 text-lg max-w-2xl mx-auto px-4">
+            Empowering university students to mentor and lead the next generation of youth in Rwanda.
+        </p>
+    </header>
+
+    <section id="mission-vision" class="max-w-6xl mx-auto px-6 py-12">
+        <div class="md:flex md:space-x-8">
+            <div class="flex-1 bg-white p-6 rounded-lg shadow-xl border-l-4 border-green-600 mb-6 md:mb-0">
+                <h3 class="text-3xl font-bold text-green-700 mb-3 flex items-center">
+                    <i class="fas fa-bullseye mr-3"></i> Our Mission
+                </h3>
+                <p class="text-gray-700 leading-relaxed">
+                    To cultivate a community of young Rwandan leaders equipped with essential knowledge in sexual and reproductive health, entrepreneurship, and digital literacy. We aim to dismantle barriers to youth success through peer-to-peer mentorship and community engagement.
+                </p>
+            </div>
+            
+            <div class="flex-1 bg-white p-6 rounded-lg shadow-xl border-l-4 border-green-600">
+                <h3 class="text-3xl font-bold text-green-700 mb-3 flex items-center">
+                    <i class="fas fa-lightbulb mr-3"></i> Our Vision
+                </h3>
+                <p class="text-gray-700 leading-relaxed">
+                    A Rwanda where every young person, regardless of background, has the confidence, resources, and support to achieve their full potential, contributing to a vibrant, safe, and equitable society.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="history" class="bg-gray-50 max-w-6xl mx-auto px-6 py-12">
+        <h3 class="text-3xl font-bold text-gray-800 text-center mb-8">Our History and Impact</h3>
+        
+        <div class="max-w-4xl mx-auto text-gray-700 space-y-6">
+            <p>
+                Founded by dedicated students at the University of Rwanda, the Girls Leaders Forum began as a small study circle aimed at supporting female peers. Over the years, we recognized the deeper need for grassroots intervention in key areas affecting youth development.
+            </p>
+            <p class="p-4 bg-green-100 border-l-4 border-green-500 font-medium">
+                Since our inception, we have directly mentored over 500 students and run awareness campaigns reaching thousands of parents and community members, culminating in the "Parental Voices for a Safe Future" initiative.
+            </p>
+            
+            <h4 class="text-xl font-bold text-green-700 mt-6">Core Values:</h4>
+            <ul class="grid md:grid-cols-3 gap-4 text-sm font-semibold">
+                <li class="p-3 bg-white rounded-lg shadow flex items-center"><i class="fas fa-shield-alt text-green-600 mr-3"></i> Integrity & Trust</li>
+                <li class="p-3 bg-white rounded-lg shadow flex items-center"><i class="fas fa-handshake text-green-600 mr-3"></i> Collaboration</li>
+                <li class="p-3 bg-white rounded-lg shadow flex items-center"><i class="fas fa-seedling text-green-600 mr-3"></i> Sustainable Impact</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="team" class="max-w-6xl mx-auto px-6 py-12 text-center">
+        <h3 class="text-3xl font-bold text-gray-800 mb-4">Our Structure: Led by Students, Driven by Community</h3>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
+            GLF is managed by a volunteer-based executive committee of students from the University of Rwanda, ensuring a fresh, relevant approach to youth issues.
+        </p>
+        
+        <div class="bg-yellow-100 p-6 rounded-lg shadow-inner border-t-4 border-yellow-500 inline-block">
+            <h4 class="text-xl font-bold text-yellow-800 mb-2">Want to Partner with Our Leadership?</h4>
+            <p class="text-gray-700 mb-4">
+                We believe in strong partnership. If you share our commitment to Rwandan youth, explore our initiative:
+            </p>
+            <a href="initiatives.html#tiers" class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-8 rounded-lg shadow-md flex items-center justify-center">
+                <i class="fas fa-star mr-2"></i> Choose Sponsorship level
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 text-center py-6">
+        <p>
+            <img src="images/GLF_LOGO.png" alt="GLF Logo" class="h-6 w-auto mx-auto mb-2 opacity-75">
+            &copy; 2025 Girls Leadership Forum (GLF) – University of Rwanda. All rights reserved.
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            // 1. Mobile Menu Toggle Functionality
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', () => {
+                    // Toggle the 'active' class on the mobile menu
+                    mobileMenu.classList.toggle('active');
+
+                    // Toggle the icon (bars <-> close)
+                    const icon = menuToggle.querySelector('i');
+                    if (mobileMenu.classList.contains('active')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            }
+
+            // 2. Close mobile menu when a link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mobileMenu.classList.contains('active')) {
+                        mobileMenu.classList.remove('active');
+                        // Reset the icon to bars when closing
+                        const icon = menuToggle.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Girls Leaders Forum (GLF)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Ensures smooth scrolling when clicking internal links */
+        html { scroll-behavior: smooth; }
+        /* ------------------------------------------- */
+        /* ESSENTIAL MOBILE MENU CSS */
+        /* By default, hide the mobile menu */
+        .mobile-nav { display: none; }
+        /* When the menu is active (via JS), display it as a flex column */
+        .mobile-nav.active { 
+            display: flex !important; /* Use !important to override inline or base styles */
+            flex-direction: column; 
+            width: 100%; 
+        }
+        /* Sticky header fix for anchor links (prevents content from hiding behind the nav bar) */
+        .map-container { position: relative; width: 100%; height: 0; padding-bottom: 56.25%; /* 16:9 ratio */ }
+        .map-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .contact-section { scroll-margin-top: 5rem; } /* Added for better section linking */
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-green-600 text-white px-6 py-4 flex justify-between items-center sticky top-0 z-50 shadow-lg">
+        <div class="flex items-center space-x-3">
+            <a href="index.html" class="flex items-center space-x-3 hover:bg-green-700/50 px-3 py-1 rounded-full transition duration-150">
+                <img src="images/GLF_LOGO.png" alt="GLF Logo" class="h-8 w-auto rounded-full">
+                <h1 class="font-extrabold text-xl">Girls Leaders Forum</h1>
+            </a>
+        </div>
+        
+        <ul class="hidden md:flex space-x-2 font-semibold">
+            <li><a href="about.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">About Us</a></li>
+            <li><a href="initiatives.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">Initiatives</a></li>
+            <li><a href="gallery.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">Gallery</a></li>
+            <li><a href="news.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">News</a></li>
+            <li>
+                <a href="contact.html" class="bg-green-700 text-white px-3 py-1 rounded-full shadow-inner transition duration-150">Contact Us</a>
+            </li> 
+        </ul>
+
+        <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+    
+    <ul id="mobile-menu" class="mobile-nav absolute top-[68px] left-0 w-full bg-green-700 md:hidden flex-col items-center py-4 space-y-3 z-40 shadow-xl">
+        <li><a href="about.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">About Us</a></li>
+        <li><a href="initiatives.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">Initiatives</a></li>
+        <li><a href="gallery.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">Gallery</a></li>
+        <li><a href="news.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">News</a></li>
+        <li>
+            <a href="contact.html" class="nav-link bg-green-600 font-bold text-white w-full py-2 block text-center transition duration-150">Contact Us</a>
+        </li>
+    </ul>
+
+    <header class="bg-gradient-to-r from-green-700 to-green-500 text-white text-center py-16">
+        <h2 class="text-4xl md:text-5xl font-extrabold">Get In Touch With GLF</h2>
+        <p class="mt-3 text-lg max-w-2xl mx-auto px-4">
+            For general inquiries, volunteering, or questions about our programs, use the form below. For sponsorship, please visit the Initiatives page.
+        </p>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-6 py-12 grid lg:grid-cols-2 gap-10 contact-section">
+        
+        <div id="general-inquiry" class="p-6 bg-white rounded-xl shadow-2xl border-t-4 border-green-600">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fas fa-envelope-open-text text-green-600 mr-3"></i>
+                General Inquiries
+            </h3>
+            
+            <form action="https://formspree.io/f/xnngdynz" method="POST" class="space-y-4">
+                <input type="text" name="name" placeholder="Your Name" class="w-full border rounded-lg p-3 focus:ring-green-500 focus:border-green-500" required>
+                <input type="email" name="email" placeholder="Your Email Address" class="w-full border rounded-lg p-3 focus:ring-green-500 focus:border-green-500" required>
+                <input type="tel" name="phone" placeholder="Phone Number (Optional)" class="w-full border rounded-lg p-3 focus:ring-green-500 focus:border-green-500">
+                
+                <div class="space-y-1">
+                    <label for="inquiry_type" class="block text-sm font-medium text-gray-700">What is your inquiry about?</label>
+                    <select name="inquiry_type" id="inquiry_type" class="w-full border rounded-lg p-3 focus:ring-green-500 focus:border-green-500 bg-white" required>
+                        <option value="" disabled selected>Select a purpose...</option>
+                        <option value="Volunteer Opportunity">Volunteer Opportunity</option>
+                        <option value="Program Question">Question about a GLF Program</option>
+                        <option value="General Feedback">General Feedback/Comments</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                
+                <textarea name="message" placeholder="Your Message" rows="5" class="w-full border rounded-lg p-3 focus:ring-green-500 focus:border-green-500" required></textarea>
+                
+                <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-lg transition duration-200">Send General Message</button>
+            </form>
+        </div>
+
+        <div>
+            <div class="bg-white p-6 rounded-xl shadow-lg mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Direct Contact</h3>
+                <ul class="space-y-3 text-lg text-gray-700">
+                    <li class="flex items-center">
+                        <i class="fas fa-phone-alt text-green-600 w-6 mr-3"></i>
+                        Phone: +250 789446462
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-at text-green-600 w-6 mr-3"></i>
+                        Email: <a href="mailto:glfhuye@gmail.com" class="hover:underline text-green-700">glfhuye@gmail.com</a>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt text-green-600 w-6 mt-1 mr-3"></i>
+                        Address: University of Rwanda - Huye Campus, Butare, Rwanda
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-clock text-green-600 w-6 mt-1 mr-3"></i>
+                        Office Hours: Mon - Fri, 8:00 AM - 5:00 PM (CAT)
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="map-container rounded-xl shadow-xl border border-gray-300">
+                <iframe 
+                    title="Girls Leadership Forum Location"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15949.123284091012!2d29.73926671077755!3d-2.607490073289053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19c30f402482e9d9%3A0xf693e506822262a4!2sUniversity%20of%20Rwanda%20-%20Huye%20Campus!5e0!3m2!1sen!2srw!4v1699999999999!5m2!1sen!2srw" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+            
+            <p class="text-center text-gray-700 mt-6 text-lg p-3 bg-yellow-100 rounded-lg">
+                For Sponsorship Inquiries, please use the dedicated form on our 
+                <a href="initiatives.html#contact" class="text-red-700 font-bold hover:underline">Initiatives Page</a>.
+            </p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 text-center py-6">
+        <p>
+            <img src="images/GLF_LOGO.png" alt="GLF Logo" class="h-6 w-auto mx-auto mb-2 opacity-75">
+            © 2025 Girls Leadership Forum (GLF) – University of Rwanda. All rights reserved.
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // 1. Mobile Menu Toggle Functionality
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('active');
+                    const icon = menuToggle.querySelector('i');
+                    if (mobileMenu.classList.contains('active')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            }
+
+            // 2. Close mobile menu when a link is clicked
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mobileMenu.classList.contains('active')) {
+                        mobileMenu.classList.remove('active');
+                        // Reset the icon to bars when closing
+                        const icon = menuToggle.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    }
+                });
+            });
+
+            // 3. Simple Form Submission Alert (Optional feedback for user)
+            const contactForm = document.querySelector('form[action*="formspree"]');
+            if (contactForm) {
+                // Remove the alert for now, as Formspree handles the confirmation itself. 
+                // Using an alert here can interfere with Formspree's redirect.
+            }
+        });
+    </script>
+</body>
+</html>

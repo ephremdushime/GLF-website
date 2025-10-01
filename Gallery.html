@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery & Impact | Girls Leaders Forum (GLF)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Ensures smooth scrolling when clicking internal links */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Mobile Navigation visibility control */
+        .mobile-nav {
+            display: none;
+        }
+        .mobile-nav.active {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        /* Responsive Video Embed Fix (Tailwind 2.x compatibility) */
+        .aspect-w-16 { --tw-aspect-w: 16; }
+        .aspect-h-9 { --tw-aspect-h: 9; }
+        .aspect-w-16 > .aspect-h-9 {
+            padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+        }
+        .aspect-w-16 > .aspect-h-9 > * {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-green-600 text-white px-6 py-4 flex justify-between items-center sticky top-0 z-50 shadow-lg">
+        <div class="flex items-center space-x-3">
+            <a href="index.html" class="flex items-center space-x-3 hover:bg-green-700/50 px-3 py-1 rounded-full transition duration-150">
+                <img src="images/GLF_LOGO.png" alt="GLF Logo" class="h-8 w-auto rounded-full">
+                <h1 class="font-extrabold text-xl">Girls Leaders Forum</h1>
+            </a>
+        </div>
+        
+        <ul class="hidden md:flex space-x-2 font-semibold">
+            <li><a href="about.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">About Us</a></li>
+            <li><a href="initiatives.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">Initiatives</a></li>
+            <li>
+                <a href="gallery.html" class="bg-green-700 text-white px-3 py-1 rounded-full shadow-inner transition duration-150">Gallery</a>
+            </li>
+            <li><a href="news.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">News</a></li>
+            <li><a href="contact.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">Contact Us</a></li> 
+        </ul>
+
+        <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+    
+    <ul id="mobile-menu" class="mobile-nav absolute top-[68px] left-0 w-full bg-green-700 md:hidden flex-col items-center py-4 space-y-3 z-40 shadow-xl">
+        <li><a href="about.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">About Us</a></li>
+        <li><a href="initiatives.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">Initiatives</a></li>
+        <li>
+            <a href="gallery.html" class="nav-link bg-green-600 font-bold text-white w-full py-2 block text-center transition duration-150">Gallery</a>
+        </li>
+        <li><a href="news.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">News</a></li>
+        <li><a href="contact.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">Contact Us</a></li>
+    </ul>
+
+    <header class="bg-gradient-to-r from-green-700 to-green-500 text-white text-center py-16">
+        <h2 class="text-4xl md:text-5xl font-extrabold">Our Impact in Photos & Videos</h2>
+        <p class="mt-3 text-lg max-w-2xl mx-auto px-4">
+            A visual record of our workshops, community forums, mentorship programs, and the youth we serve.
+        </p>
+    </header>
+
+    <section id="photo-gallery" class="max-w-6xl mx-auto px-6 py-12">
+        <h3 class="text-3xl font-bold text-gray-800 text-center mb-8">Campaign & Workshop Highlights</h3>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                <img src="https://via.placeholder.com/600x400?text=Workshop+Session+1" alt="GLF Workshop with students" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <p class="text-lg font-semibold text-green-700">Health Literacy Training</p>
+                    <p class="text-sm text-gray-600">Students participating in a group discussion on reproductive health.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                <img src="https://via.placeholder.com/600x400?text=Community+Forum+Photo" alt="GLF Community Forum with parents" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <p class="text-lg font-semibold text-green-700">Parental Voices Community Meeting</p>
+                    <p class="text-sm text-gray-600">Engaging with local parents about child communication strategies.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                <img src="https://via.placeholder.com/600x400?text=Mentorship+Session" alt="GLF Mentorship one-on-one" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <p class="text-lg font-semibold text-green-700">One-on-One Mentoring</p>
+                    <p class="text-sm text-gray-600">A university student mentor guiding a secondary school mentee.</p>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                <img src="https://via.placeholder.com/600x400?text=Graduation+Certificates" alt="Students receiving certificates" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <p class="text-lg font-semibold text-green-700">Program Completion Ceremony</p>
+                    <p class="text-sm text-gray-600">Celebrating graduates of the GLF Leadership Development Program.</p>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                <img src="https://via.placeholder.com/600x400?text=GLF+Executive+Team" alt="GLF Executive Committee" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <p class="text-lg font-semibold text-green-700">GLF Executive Team</p>
+                    <p class="text-sm text-gray-600">The dedicated student committee behind our initiatives.</p>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                <img src="https://via.placeholder.com/600x400?text=Field+Visit+Action" alt="GLF team working in the field" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <p class="text-lg font-semibold text-green-700">Fieldwork Action Day</p>
+                    <p class="text-sm text-gray-600">Organizing materials before a workshop in the community.</p>
+                </div>
+            </div>
+            
+        </div>
+        <p class="text-center text-gray-500 mt-8 text-sm italic">Note: Please replace the placeholder image URLs with links to your actual campaign photos!</p>
+    </section>
+
+    <section id="video-media" class="max-w-6xl mx-auto px-6 py-12 bg-gray-50 border-t border-gray-200">
+        <h3 class="text-3xl font-bold text-gray-800 text-center mb-8">Videos & Testimonials</h3>
+        
+        <div class="grid lg:grid-cols-2 gap-8">
+            
+            <div class="bg-white rounded-lg shadow-xl p-4">
+                <h4 class="text-xl font-bold text-green-700 mb-3">Campaign Overview (2024)</h4>
+                <div class="relative aspect-w-16 aspect-h-9">
+                    <iframe 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        title="GLF Campaign Video Placeholder" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                        class="rounded-lg shadow-md"
+                    ></iframe>
+                </div>
+                <p class="text-sm text-gray-600 mt-3">Watch our short video summarizing the goals and early impact of the Parental Voices campaign.</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-xl p-4">
+                <h4 class="text-xl font-bold text-green-700 mb-3">Parent Testimonial</h4>
+                <div class="relative aspect-w-16 aspect-h-9">
+                    <iframe 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        title="GLF Testimonial Placeholder" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                        class="rounded-lg shadow-md"
+                    ></iframe>
+                </div>
+                <p class="text-sm text-gray-600 mt-3">Hear a parent share how the GLF workshops helped improve communication at home.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 text-center py-6">
+        <p>
+            <img src="images/GLF_LOGO.png" alt="GLF Logo" class="h-6 w-auto mx-auto mb-2 opacity-75">
+            &copy; 2025 Girls Leadership Forum (GLF) – University of Rwanda. All rights reserved.
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // 1. Mobile Menu Toggle Functionality
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('active');
+                    
+                    // Logic to toggle the menu icon (bars <-> close)
+                    const icon = menuToggle.querySelector('i');
+                    if (mobileMenu.classList.contains('active')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            }
+            
+            // 2. Close mobile menu when a link is clicked
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mobileMenu.classList.contains('active')) {
+                        mobileMenu.classList.remove('active');
+                        // Reset the icon to bars when closing
+                        const icon = menuToggle.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

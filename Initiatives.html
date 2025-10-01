@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Initiatives | Parental Voices for a Safe Future</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Gold Color Definition (Richer gold for prominence) */
+        .border-gold { border-color: #D4AF37; } 
+
+        /* Silver Color Definition */
+        .border-silver { border-color: #A7A9AC; } 
+        
+        /* Platinum Border Color (Darker gold) */
+        .border-platinum { border-color: #B8860B; } 
+
+        /* Custom shadow effect for the Platinum tier on hover */
+        .hover\:shadow-gold-lg:hover {
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4), 0 6px 6px rgba(212, 175, 55, 0.2);
+        }
+
+        /* Mobile Navigation visibility control */
+        .mobile-nav {
+            display: none;
+        }
+        /* Essential: Shows the mobile menu as a full-width column when active */
+        .mobile-nav.active {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        /* Sticky header fix for anchor links (prevents content from hiding behind the nav bar) */
+        section {
+            scroll-margin-top: 5rem; 
+        }
+
+        /* Ensure smooth scrolling when clicking internal links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-green-600 text-white px-6 py-4 flex justify-between items-center sticky top-0 z-50 shadow-lg">
+        <div class="flex items-center space-x-3">
+            <a href="index.html" class="flex items-center space-x-3 hover:bg-green-700/50 px-3 py-1 rounded-full transition duration-150">
+                <img src="images/GLF_LOGO.png" alt="GLF Logo" class="h-8 w-auto rounded-full">
+                <h1 class="font-extrabold text-xl">Girls Leaders Forum</h1>
+            </a>
+        </div>
+        
+        <ul class="hidden md:flex space-x-2 font-semibold">
+            <li><a href="about.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">About Us</a></li>
+            <li>
+                <a href="initiatives.html" class="bg-green-700 text-white px-3 py-1 rounded-full shadow-inner transition duration-150">Initiatives</a>
+            </li>
+            <li><a href="gallery.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">Gallery</a></li>
+            <li><a href="news.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">News</a></li>
+            <li><a href="contact.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">Contact Us</a></li> 
+        </ul>
+
+        <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <ul id="mobile-menu" class="mobile-nav absolute top-[68px] left-0 w-full bg-green-700 md:hidden flex-col items-center py-4 space-y-3 z-40 shadow-xl">
+        <li><a href="about.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">About Us</a></li>
+        <li><a href="initiatives.html" class="nav-link bg-green-600 font-bold text-white w-full py-2 block text-center transition duration-150">Initiatives</a></li>
+        <li><a href="gallery.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">Gallery</a></li>
+        <li><a href="news.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">News</a></li>
+        <li><a href="contact.html" class="nav-link text-white hover:bg-green-600 w-full py-2 block text-center transition duration-150">Contact Us</a></li>
+    </ul>
+
+    <header class="bg-gradient-to-r from-green-700 to-green-500 text-white text-center py-16">
+        <h2 class="text-4xl md:text-5xl font-extrabold">Our Initiatives</h2>
+        <p class="mt-3 text-lg max-w-2xl mx-auto px-4">
+            See the projects we are currently running and explore ways to get involved and support our work across Rwanda.
+        </p>
+    </header>
+
+    <section id="initiatives-list" class="max-w-6xl mx-auto px-6 py-12 text-center">
+        <h3 class="text-3xl font-bold text-gray-800 mb-8">Current Fundraising Campaign</h3>
+
+        <div class="bg-white rounded-xl p-8 shadow-2xl border-t-4 border-red-600 max-w-4xl mx-auto">
+            <div class="flex items-center justify-center space-x-4 mb-4">
+                <i class="fas fa-heart text-4xl text-red-600"></i>
+                <h4 class="text-3xl font-extrabold text-green-700">Parental Voices for a Safe Future</h4>
+            </div>
+            <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                A Girls Leaders Forum (GLF) campaign empowering parents to guide children in sexual health, 
+                reducing early pregnancies, STIs, and harassment in Rwanda.
+            </p>
+            <a href="#tiers" class="mt-4 inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-5 rounded-lg transition duration-200">
+                Jump to Sponsorship Details
+            </a>
+        </div>
+        
+        <h3 class="text-3xl font-bold text-gray-800 mt-12 mb-8">Future GLF Projects</h3>
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-yellow-500">
+                <h4 class="text-xl font-bold text-yellow-700 mb-2">Digital Literacy Workshops</h4>
+                <p class="text-gray-600 text-sm">Empowering young women with technology skills for better employment prospects. (Phase I Planning)</p>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-blue-500">
+                <h4 class="text-xl font-bold text-blue-700 mb-2">Youth Entrepreneurship Challenge</h4>
+                <p class="text-gray-600 text-sm">Mentoring students to develop sustainable business ideas. (Future Project)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="max-w-5xl mx-auto px-6 py-12 text-center">
+        <h2 class="text-3xl font-bold text-green-700 mb-6">About this Campaign</h2>
+        <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+            We believe empowering parents to discuss sexual health with their children creates a safer, healthier society. 
+            This campaign seeks corporate partners, NGOs, and stakeholders to join us in building awareness, providing resources, 
+            and amplifying voices for change across Rwanda.
+        </p>
+    </section>
+
+    <section id="tiers" class="max-w-6xl mx-auto px-6 py-12 bg-white rounded-xl shadow-xl">
+        <h3 class="text-3xl font-bold text-gray-800 text-center mb-10">Select Sponsorship Levels</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            
+            <div class="bg-white rounded-xl p-6 shadow-2xl border-4 border-platinum relative hover:shadow-gold-lg transition duration-300">
+                <span class="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold py-1 px-3 rounded-bl-lg">TOP TIER</span>
+                <h3 class="text-3xl font-extrabold text-green-800 mb-2 mt-2">PLATINUM SPONSOR</h3>
+                <p class="text-xl font-bold mb-4 text-gray-700">RWF 2,000,000+</p>
+                <ul class="space-y-3 text-gray-600 text-sm">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Title Sponsor (Highest brand visibility).
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Prominent Logo on all materials (T-shirts, Banners, Media).
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Speaking Slot at the National Closing Forum.
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Dedicated mention in all Press Releases and Radio Spots.
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Featured in GLF's social media and campaign video documentation.
+                    </li>
+                </ul>
+                <a href="mailto:glfhuye@gmail.com?subject=Inquiry:%20Platinum%20Partner%20Sponsorship%20(RWF%202M%2b)&body=Hello%20GLF%2C%0A%0AI%20am%20interested%20in%20discussing%20the%20Platinum%20Partner%20sponsorship%20level%20for%20the%20'Parental%20Voices%20for%20a%20Safe%20Future'%20campaign.%20Please%20contact%20me%20to%20proceed.%0A%0ACompany%20Name%3A%0AContact%20Person%20%26%20Title%3A%0APhone%20Number%3A" 
+                    class="mt-6 w-full inline-block text-center bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-4 rounded-lg transition duration-200 shadow-lg select-button transform hover:scale-[1.01]">
+                    <i class="fas fa-handshake mr-2"></i>
+                    Select Platinum sponsorship
+                </a>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-xl border-4 border-gold relative hover:shadow-xl transition duration-300">
+                <h3 class="text-3xl font-extrabold text-green-700 mb-2 mt-2">GOLD SPONSOR</h3>
+                <p class="text-xl font-bold mb-4 text-gray-700">RWF 1,000,000 - 1,999,999</p>
+                <ul class="space-y-3 text-gray-600 text-sm">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Logo on primary campaign materials (T-shirts, Banners, Posters...).
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Verbal recognition during community forums and school workshops.
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Social media acknowledgment across all GLF platforms.
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Inclusion in the final CSR impact report.
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Formal certificate of appreciation.
+                    </li>
+                </ul>
+                <a href="mailto:glfhuye@gmail.com?subject=Inquiry:%20Gold%20Partner%20Sponsorship%20(RWF%201M%2b)&body=Hello%20GLF%2C%0A%0AI%20am%20interested%20in%20discussing%20the%20Gold%20Partner%20sponsorship%20level%20for%20the%20'Parental%20Voices%20for%20a%20Safe%20Future'%20campaign.%20Please%20contact%20me%20to%20proceed.%0A%0ACompany%20Name%3A%0AContact%20Person%20%26%20Title%3A%0APhone%20Number%3A" 
+                    class="mt-6 w-full inline-block text-center bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-4 rounded-lg transition duration-200 shadow-md select-button transform hover:scale-[1.01]">
+                    <i class="fas fa-handshake mr-2"></i>
+                    Select Gold Sponsorship
+                </a>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-xl border-4 border-silver relative hover:shadow-xl transition duration-300">
+                <h3 class="text-3xl font-extrabold text-green-600 mb-2 mt-2">SILVER SPONSOR</h3>
+                <p class="text-xl font-bold mb-4 text-gray-700">RWF 500,000 - 999,999</p>
+                <ul class="space-y-3 text-gray-600 text-sm">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Logo placement on selected event banners and posters.
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Verbal recognition during community and school activities.
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Formal certificate of appreciation from GLF.
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Networking opportunity with government and NGOs at the final forum.
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Social media thank you post.
+                    </li>
+                </ul>
+                <a href="mailto:glfhuye@gmail.com?subject=Inquiry:%20Silver%20Partner%20Sponsorship%20(RWF%20500k%2b)&body=Hello%20GLF%2C%0A%0AI%20am%20interested%20in%20discussing%20the%20Silver%20Partner%20sponsorship%20level%20for%20the%20'Parental%20Voices%20for%20a%20Safe%20Future'%20campaign.%20Please%20contact%20me%20to%20proceed.%0A%0ACompany%20Name%3A%0AContact%20Person%20%26%20Title%3A%0APhone%20Number%3A" 
+                    class="mt-6 w-full inline-block text-center bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded-lg transition duration-200 shadow-md select-button transform hover:scale-[1.01]">
+                    <i class="fas fa-handshake mr-2"></i>
+                    Select Silver Sponsorship
+                </a>
+            </div>
+        </div>
+
+        <div class="mt-10 p-6 bg-yellow-50 border-l-4 border-yellow-500 rounded-lg max-w-6xl mx-auto">
+            <h3 class="text-xl font-bold text-gray-800 mb-2 flex items-center">
+                <i class="fas fa-gift w-6 h-6 mr-2 text-yellow-600"></i>
+                In-Kind Support: An Easy Way to Sponsor
+            </h3>
+            <p class="text-gray-700">Companies can also provide essential In-Kind Support to meet our RWF 3,500,000 goal, such as:</p>
+            <ul class="list-disc list-inside ml-4 mt-2 text-sm font-medium text-gray-800">
+                <li>Refreshments: Bottled water, juice, or snacks for community forums.</li>
+                <li>Logistics: Printing of campaign materials (posters, booklets).</li>
+                <li>Media: Airtime on community radio stations.</li>
+            </ul>
+            <a href="mailto:glfhuye@gmail.com?subject=Inquiry:%20In-Kind%20Sponsorship%20Offer&body=Hello%20GLF%2C%0A%0AI%20am%20interested%20in%20providing%20In-Kind%20Support%20for%20the%20'Parental%20Voices%20for%20a%20Safe%20Future'%20campaign.%0A%0AWe%20can%20offer%20the%20following%20type%20of%20support%3A%0A%0ACompany%20Name%3A%0AContact%20Person%20%26%20Title%3A%0APhone%20Number%3A" 
+                class="mt-4 inline-block text-center bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200 text-sm shadow-md select-button transform hover:scale-[1.01]">
+                <i class="fas fa-envelope-open-text w-4 h-4 inline-block mr-2"></i>
+                Offer In-Kind Support
+            </a>
+        </div>
+    </section>
+
+
+    <section id="contact" class="max-w-5xl mx-auto px-6 py-12">
+        <h2 class="text-3xl font-bold text-red-700 mb-6 text-center flex items-center justify-center">
+            <i class="fas fa-handshake text-3xl mr-3"></i>
+            Sponsorship Inquiry Form
+        </h2>
+        <p class="text-center text-gray-700 mb-6 max-w-xl mx-auto">
+            Ready to partner with GLF? Use this dedicated form to specify your sponsorship interest (Platinum, Gold, Silver, or In-Kind). Your message will be sent directly to the GLF Executive Committee for immediate follow-up.
+        </p>
+        
+        <form action="https://formspree.io/f/xnngdynz" method="POST" class="max-w-xl mx-auto space-y-4 p-6 bg-white rounded-lg shadow-lg border-t-4 border-red-600">
+            
+            <input type="text" name="company_name" placeholder="Company Name" class="w-full border rounded-lg p-3 focus:ring-green-500 focus:border-green-500" required>
+            <input type="text" name="contact_person" placeholder="Contact Person Name" class="w-full border rounded-lg p-3 focus:ring-green-500 focus:border-green-500" required>
+            <input type="email" name="email" placeholder="Corporate Email" class="w-full border rounded-lg p-3 focus:ring-green-500 focus:border-green-500" required>
+            
+            <div class="space-y-1">
+                <label for="sponsorship_level" class="block text-sm font-medium text-gray-700">Sponsorship Interest Level</label>
+                <select name="sponsorship_level" id="sponsorship_level" class="w-full border rounded-lg p-3 focus:ring-green-500 focus:border-green-500 bg-white" required>
+                    <option value="" disabled selected>Select an option...</option>
+                    <option value="Platinum Partner (RWF 2M+)">Platinum Partner (RWF 2,000,000+)</option>
+                    <option value="Gold Sponsor (RWF 1M-1.99M)">Gold Sponsor (RWF 1,000,000 - 1,999,999)</option>
+                    <option value="Silver Sponsor (RWF 500k-999k)">Silver Sponsor (RWF 500,000 - 999,999)</option>
+                    <option value="In-Kind Support/Other">In-Kind Support / Other</option>
+                </select>
+            </div>
+            
+            <textarea name="message" placeholder="Please describe your intended sponsorship or questions." rows="4" class="w-full border rounded-lg p-3 focus:ring-green-500 focus:border-green-500" required></textarea>
+            
+            <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-200 transform hover:scale-[1.01]">Send Sponsorship Inquiry</button>
+        </form>
+        
+        <p class="mt-8 text-center text-gray-700">
+            For General Inquiries or volunteering, please use the form on the dedicated 
+            <a href="contact.html" class="text-green-700 font-semibold hover:text-green-900 transition duration-150">Contact Us page</a>.
+        </p>
+    </section>
+    
+    <footer class="bg-gray-900 text-gray-300 text-center py-6">
+    <p>
+        <img src="images/GLF_LOGO.png" alt="GLF Logo" class="h-6 w-auto mx-auto mb-2 opacity-75">
+        &copy; 2025 Girls Leadership Forum (GLF) – University of Rwanda. All rights reserved.
+    </p>
+</footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            // 1. Mobile Menu Toggle Functionality (Improved for icon switching)
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', () => {
+                    // Toggle the 'active' class on the mobile menu
+                    mobileMenu.classList.toggle('active');
+
+                    // Toggle the icon (bars <-> close)
+                    const icon = menuToggle.querySelector('i');
+                    if (mobileMenu.classList.contains('active')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            }
+
+            // 2. Close mobile menu when a link is clicked
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mobileMenu.classList.contains('active')) {
+                        mobileMenu.classList.remove('active');
+                        // Reset the icon to bars when closing
+                        const icon = menuToggle.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    }
+                });
+            });
+
+            // 3. Contact Form Submission (Simple Alert for user feedback)
+            const contactForm = document.querySelector('form[action*="formspree"]');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    // NOTE: The form will still submit to Formspree, this just provides an instant alert.
+                    // For a real site, use Formspree's AJAX or Fetch API for a cleaner success message.
+                    alert('Your sponsorship inquiry has been sent! We will contact you shortly to discuss partnership details.');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
