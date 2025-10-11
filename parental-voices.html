@@ -28,6 +28,11 @@
         html {
             scroll-behavior: smooth;
         }
+        
+        /* Custom style for main content readability */
+        .text-content p {
+            line-height: 1.75;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -44,6 +49,7 @@
             <li><a href="about.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">About Us</a></li>
             <li><a href="initiatives.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">Initiatives</a></li>
             <li><a href="gallery.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">Gallery</a></li>
+            <!-- Highlighted as current section -->
             <li><a href="news.html" class="bg-green-700 text-white px-3 py-1 rounded-full shadow-inner transition duration-150">News</a></li>
             <li><a href="contact.html" class="nav-link px-3 py-1 hover:bg-green-700/50 transition duration-150 rounded-full">Contact Us</a></li> 
         </ul>
@@ -76,65 +82,71 @@
 
     <main class="max-w-4xl mx-auto px-6 py-16">
         
-        <img src="https://via.placeholder.com/1000x600?text=Parental+Voices+Forum+Launch" alt="Group of parents and organizers at the GLF Parental Voices launch forum" class="w-full h-auto rounded-xl shadow-lg mb-10">
+        <!-- IMAGE UPDATED HERE WITH GLF.jpeg -->
+        <img src="GLF.jpeg" 
+             alt="Parents and adolescents engaging in an open conversation about health education" 
+             class="w-full h-auto rounded-xl shadow-lg mb-10"
+             onerror="this.onerror=null;this.src='https://placehold.co/1000x600/10B981/ffffff?text=Parental+Voices+Campaign+Image';">
 
-        <section id="background" class="mb-12">
-            <h3 class="text-2xl font-bold text-green-700 mb-4">1. Background</h3>
-            <p class="text-gray-700 mb-4">
-                Rwanda continues to face challenges in adolescent sexual and reproductive health (SRH). In 2021, over 20,000 teenage pregnancies were reported, alongside increasing cases of STIs and sexual harassment.
-            </p>
-            <p class="text-gray-700 mb-4">
-                While schools and health facilities provide SRH education, many adolescents lack culturally appropriate guidance at home. Silence and stigma around sexuality leave young people vulnerable to misinformation.
-            </p>
-            <p class="text-gray-700 font-semibold">
-                The 'Parental Voices for Safe Future' campaign seeks to address this by empowering parents as the first educators, building their capacity for open, value-based conversations with their children.
-            </p>
-        </section>
+        <div class="text-content">
+            <section id="background" class="mb-12">
+                <h3 class="text-2xl font-bold text-green-700 mb-4">1. Background</h3>
+                <p class="text-gray-700 mb-4">
+                    Rwanda continues to face challenges in adolescent sexual and reproductive health (SRH). In 2021, over 20,000 teenage pregnancies were reported, alongside increasing cases of STIs and sexual harassment.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    While schools and health facilities provide SRH education, many adolescents lack culturally appropriate guidance at home. Silence and stigma around sexuality leave young people vulnerable to misinformation.
+                </p>
+                <p class="text-gray-700 font-semibold">
+                    The 'Parental Voices for Safe Future' campaign seeks to address this by empowering parents as the first educators, building their capacity for open, value-based conversations with their children.
+                </p>
+            </section>
 
-        <section id="objectives" class="mb-12">
-            <h3 class="text-2xl font-bold text-green-700 mb-4">2. Key Objectives</h3>
-            <ul class="list-disc list-inside space-y-2 text-gray-700 pl-4">
-                <li>Raise awareness on the importance of parental involvement in adolescent SRH.</li>
-                <li>Build parents’ capacity to deliver accurate, age-appropriate, and culturally relevant information.</li>
-                <li>Foster trust and dialogue between parents and children.</li>
-                <li>Contribute to the reduction of teenage pregnancies, STIs, and sexual harassment.</li>
-            </ul>
-        </section>
+            <section id="objectives" class="mb-12">
+                <h3 class="text-2xl font-bold text-green-700 mb-4">2. Key Objectives</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700 pl-4">
+                    <li>Raise awareness on the importance of parental involvement in adolescent SRH.</li>
+                    <li>Build parents’ capacity to deliver accurate, age-appropriate, and culturally relevant information.</li>
+                    <li>Foster trust and dialogue between parents and children.</li>
+                    <li>Contribute to the reduction of teenage pregnancies, STIs, and sexual harassment.</li>
+                </ul>
+            </section>
 
-        <section id="approach" class="mb-12">
-            <h3 class="text-2xl font-bold text-green-700 mb-4">3. Campaign Approach (8 Weeks)</h3>
-            <p class="text-gray-700 mb-4">
-                This will be an 8-week intensive campaign, focusing on engagement and capacity building across multiple community levels.
-            </p>
-            <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Key Activities:</h4>
-            <ul class="list-disc list-inside space-y-1 text-gray-700 pl-4">
-                <li>Stakeholder mobilization (including universities, government, NGOs, and religious leaders).</li>
-                <li>Training youth facilitators (GLF members) in SRH communication.</li>
-                <li>Organizing Parent–child dialogue forums in targeted communities.</li>
-                <li>Conducting school-based workshops with parents, teachers, and learners.</li>
-                <li>Religious engagement to amplify messages.</li>
-                <li>Media outreach via radio, posters, social media, and theatre.</li>
-                <li>Final forum to share outcomes, testimonies, and recommendations.</li>
-            </ul>
+            <section id="approach" class="mb-12">
+                <h3 class="text-2xl font-bold text-green-700 mb-4">3. Campaign Approach (8 Weeks)</h3>
+                <p class="text-gray-700 mb-4">
+                    This will be an 8-week intensive campaign, focusing on engagement and capacity building across multiple community levels.
+                </p>
+                <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Key Activities:</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700 pl-4">
+                    <li>Stakeholder mobilization (including universities, government, NGOs, and religious leaders).</li>
+                    <li>Training youth facilitators (GLF members) in SRH communication.</li>
+                    <li>Organizing Parent–child dialogue forums in targeted communities.</li>
+                    <li>Conducting school-based workshops with parents, teachers, and learners.</li>
+                    <li>Religious engagement to amplify messages.</li>
+                    <li>Media outreach via radio, posters, social media, and theatre.</li>
+                    <li>Final forum to share outcomes, testimonies, and recommendations.</li>
+                </ul>
 
-            <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Target Groups:</h4>
-            <p class="text-gray-700 mb-2">
-                The primary beneficiaries are Parents and guardians of adolescents (10–19 years). Secondary beneficiaries include adolescents, teachers, religious leaders, local authorities, and community health workers.
-            </p>
-            <p class="text-gray-700">
-                The campaign will cover both urban and rural communities, focusing on areas with high teenage pregnancy rates.
-            </p>
-        </section>
-        
-        <section id="partnership" class="bg-green-50 p-6 rounded-lg shadow-inner mb-12">
-            <h3 class="text-2xl font-bold text-green-700 mb-4">4. Partnership Opportunities</h3>
-            <p class="text-gray-700 mb-4">
-                We invite NGOs, development partners, and private companies to support this youth-led initiative. The total estimated budget for the 8-week campaign is RWF 3,500,000.
-            </p>
-            <p class="text-gray-700 font-medium">
-                Support can be provided through technical expertise, financial contributions, or in-kind support (e.g., printing, airtime, venues, refreshments). Your partnership will amplify impact, visibility, and sustainability.
-            </p>
-        </section>
+                <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Target Groups:</h4>
+                <p class="text-gray-700 mb-2">
+                    The primary beneficiaries are Parents and guardians of adolescents (10–19 years). Secondary beneficiaries include adolescents, teachers, religious leaders, local authorities, and community health workers.
+                </p>
+                <p class="text-gray-700">
+                    The campaign will cover both urban and rural communities, focusing on areas with high teenage pregnancy rates.
+                </p>
+            </section>
+            
+            <section id="partnership" class="bg-green-50 p-6 rounded-lg shadow-inner mb-12">
+                <h3 class="text-2xl font-bold text-green-700 mb-4">4. Partnership Opportunities</h3>
+                <p class="text-gray-700 mb-4">
+                    We invite NGOs, development partners, and private companies to support this youth-led initiative. The total estimated budget for the 8-week campaign is RWF 3,500,000.
+                </p>
+                <p class="text-gray-700 font-medium">
+                    Support can be provided through technical expertise, financial contributions, or in-kind support (e.g., printing, airtime, venues, refreshments). Your partnership will amplify impact, visibility, and sustainability.
+                </p>
+            </section>
+        </div>
         
         <div class="text-center pt-8 border-t border-gray-200">
             <a href="news.html" class="inline-flex items-center text-green-600 font-semibold hover:text-green-800 transition duration-150 text-lg">
