@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parental Voice Volunteer Application</title>
+    <style>
+        /* Basic inline CSS for readability - you should move this to a separate .css file later */
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+        h1 { text-align: center; color: #333; }
+        label { display: block; margin-top: 15px; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="email"], textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        textarea { resize: vertical; height: 100px; }
+        button { background-color: #007bff; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; margin-top: 20px; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+
+    <h1>Join Our Parental Voice Campaign</h1>
+    <p>Thank you for your interest in volunteering! Please fill out the form below to apply.</p>
+
+    <form action="/submit-application" method="POST"> 
+        
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="full_name" required>
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email_address" required>
+
+        <label for="phone">Phone Number (Optional)</label>
+        <input type="text" id="phone" name="phone_number">
+
+        <label for="campaign_interest">Why do you want to join the 'Parental Voice for a Safe Campaign'? *</label>
+        <textarea id="campaign_interest" name="interest_reason" required></textarea>
+
+        <label for="experience">Do you have relevant experience (e.g., advocacy, community organizing)?</label>
+        <textarea id="experience" name="relevant_experience"></textarea>
+
+        <label for="availability">Please indicate your general availability or commitment level (e.g., '5 hours/week', 'weekend events').</label>
+        <input type="text" id="availability" name="availability">
+
+        <button type="submit">Submit Application</button>
+
+    </form>
+
+</body>
+</html>
